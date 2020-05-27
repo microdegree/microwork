@@ -146,9 +146,7 @@
                                 <div class="container-login100">
                                     <div class="row" style="margin-top: -150px;" >
                                         <div class="col-lg-6">
-                                            <!-- <span class="login100-form-title p-b-49">
-                                                SignUp....!
-                                            </span> -->
+                                         
                                                 <img src="assets/images/agency/login.jpg" class="responsive" id="optionalstuff">
             
                                         </div>
@@ -158,19 +156,19 @@
                                              method="POST" data-netlify="true"
                                             action="./pay-and-confirm-slot.html"
                                                ></br>
-                                            <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;color: rgb(255, 255, 255);">Sign Up</h1></center> 
-                                                <center><h5 style="color: rgb(255, 255, 255);"> SignUp Using Google</h5></center>
+                                            <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;color: rgb(255, 255, 255);font-family: Montserrat;">Sign Up</h1></center> 
+                                                <center><h5 style="color: rgb(255, 255, 255);font-family: Montserrat;"> SignUp Using Google</h5></center>
                                             </br><center>
                                                     <div class="g-signin2 abcRioButtonContentwrapper" data-onsuccess="onSignIn" ></div>
                                                     <a href="#" onclick="signOut();" >
                                                 </a></center>
                                             <div class="form-group selectCourse" >
-                                            <label for="nameInputLabel">Full Name *</label>
+                                            <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
                                             <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;margin-top: -5px;width: 310px;"
                                                         name="candidateName" placeholder="" required>
                                             </div>
                                             <div class=" form-group selectCourse" style="margin-top: -10px;">
-                                            <label for="emailInputLabel">Email address *</label>
+                                            <label for="emailInputLabel" style="font-family: Montserrat;">Email address *</label>
                                             <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;margin-top: -5px;"
                                                         aria-describedby="emailHelp" placeholder="" required >
                                             </div>
@@ -180,13 +178,13 @@
                                                     <div class="col-sm-2" >
                                                     <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
-                                                    <label class="form-check-label" for="exampleRadios1">
+                                                    <label class="form-check-label" for="exampleRadios1" style="font-family: Montserrat;">
                                                                         Student
                                                     </label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
-                                                    <label class="form-check-label" for="exampleRadios2">
+                                                    <label class="form-check-label" for="exampleRadios2" style="font-family: Montserrat;">
                                                                         Professional
                                                     </label>
                                                     </div>
@@ -194,7 +192,7 @@
                                                     </div>
                                             </fieldset>
                                             <center> 
-                                                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;">Submit</button>
+                                                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;">Submit</button>
                                             </center>
                                             
                                        
@@ -214,6 +212,75 @@
         </div>
             
     </section>
+    <!-- <div class="container">
+        <section id="formHolder">
+     
+           <div class="row">
+     
+            
+              <div class="col-sm-6 brand mobileHide" >
+                 <a href="#" class="logo">Welcome <span>.</span></a>
+     
+                 <div class="heading">
+                    <img src="assets/images/agency/log.png" class="responsive" id="optionalstuff" style="height: 400px;width: 400px;">
+                 </div>
+     
+                 <div class="success-msg">
+                    <p>Great! You are one of our members now</p>
+                    <a href="#" class="profile">Your Profile</a>
+                 </div>
+              </div>
+     
+     
+             
+              <div class="col-sm-6 form">
+     
+                
+     
+     
+                
+                 <div class="signup form-peice">
+                    <form class="signup-form" action="#" method="post">
+     
+                       <div class="form-group">
+                          <label for="name">Full Name</label>
+                          <input type="text" name="username" id="name" class="name">
+                          <span class="error"></span>
+                       </div>
+     
+                       <div class="form-group">
+                          <label for="email">Email Adderss</label>
+                          <input type="email" name="emailAdress" id="email" class="email">
+                          <span class="error"></span>
+                       </div>
+     
+                       <div class="form-group">
+                          <label for="phone">Phone Number - <small>Optional</small></label>
+                          <input type="text" name="phone" id="phone">
+                       </div>
+     
+                       <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="password" class="pass">
+                          <span class="error"></span>
+                       </div>
+     
+                       <div class="form-group">
+                          <label for="passwordCon">Confirm Password</label>
+                          <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                          <span class="error"></span>
+                       </div>
+     
+                       <div class="CTA">
+                          <input type="submit" value="Signup Now" id="submit">
+                          <a href="#" class="switch">I have an account</a>
+                       </div>
+                    </form>
+                 </div>
+              </div>
+           </div>
+     
+        </section> -->
     <script>
        function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();

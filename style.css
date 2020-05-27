@@ -97,7 +97,7 @@
 /*===================================
   # Google Fonts
 ====================================== */
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito Sans:300,400,500,700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Eczar:400,500,600,700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,700i,900&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600&amp;display=swap");
@@ -132,7 +132,7 @@ html {
 }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 1.45em;
   -webkit-font-smoothing: antialiased;
@@ -193,7 +193,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 h1 {
@@ -1073,7 +1073,7 @@ cite {
   color: #F1720B;
   font-size: 12px;
   line-height: 56px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   padding: 0 70px;
 }
 
@@ -1157,18 +1157,18 @@ cite {
 }
 
 .btn-primary1.btn-gradient1 {
-  background-image: -webkit-linear-gradient(left, rgb(10, 122, 6), #05d107);
-  background-image: linear-gradient(to right, rgb(10, 122, 6), #05d107);
+  background-image: -webkit-linear-gradient(left, #ffffff, #ffffff);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
   padding: 0 60px;
   font-size: 13px;
   border-radius: 5px;
-  box-shadow: 10px 10px 40px #EB5C74;
+  box-shadow: 10px 10px 40px rgb(221, 221, 221);
 }
 
 .btn-primary1.btn-gradient1:hover,
 .btn-primary1.btn-gradient1:focus {
-  background-image: -webkit-linear-gradient(left, #05d107,rgb(10, 122, 6));
-  background-image: linear-gradient(to right, #05d107, rgb(10, 122, 6));
+  background-image: -webkit-linear-gradient(left, #ffffff,#ffffff);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
   color: #fff !important;
 }
 
@@ -2477,11 +2477,11 @@ textarea {
 
 .header-style-five .mainmenu-wrap .menu>ul>li>a {
   color: #062A42;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   padding: 10px 22px;
   text-transform: none;
-  font-family: "Montserrat", sans-serif;
+  
 }
 
 .header-style-five .mainmenu-wrap .menu>ul>li>a:hover,
@@ -2491,7 +2491,7 @@ textarea {
 
 .header-style-five .mainmenu-wrap .menu>ul>li>a.btn-gradient {
   font-weight: 700;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #fff;
   font-size: 13px;
   height: 40px;
@@ -2585,7 +2585,7 @@ textarea {
   font-size: 13px;
   padding: 0 60px;
   text-transform: uppercase;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .default-header .language>li {
@@ -2868,7 +2868,7 @@ textarea {
     font-size: 14px;
     padding: 15px 20px;
     width: auto;
-    font-family: "Heebo", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
   }
 
   .site-header.default-header .mobile-logo {
@@ -7012,7 +7012,7 @@ textarea {
 
 .free-practice-content .section-header.style-four .btn-primary {
   font-size: 12px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   padding: 0 70px;
   background-color: #F1720B;
 }
@@ -7577,7 +7577,7 @@ textarea {
   font-weight: 700;
   padding: 0 60px;
   text-transform: uppercase;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   margin-top: 25px;
 }
 
@@ -7871,7 +7871,7 @@ textarea {
 }
 
 .room-pricing-section .room-pricing .btn-primary.btn-blue {
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
   padding: 0 60px;
   text-transform: uppercase;
@@ -8994,7 +8994,7 @@ textarea {
   position: absolute;
   right: -30px;
   top: 22px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
@@ -10263,7 +10263,7 @@ textarea {
 }
 
 .coming-soon-content .btn-primary.btn-blue {
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
   padding: 0 60px;
   text-transform: uppercase;
@@ -10435,7 +10435,7 @@ textarea {
 }
 
 .error-page-content .btn-primary.btn-blue {
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
   padding: 0 60px;
   text-transform: uppercase;
@@ -10748,7 +10748,7 @@ textarea {
 
 .widget.widget-newlsetter.newlsetter-two .subscribe-form .form-group>#subscribe-btn {
   width: 100%;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   border-radius: 4px;
   background-color: #EB5C74;
@@ -11085,7 +11085,7 @@ textarea {
 .site-footer.footer-style-three.footer-style-four {
   font-size: 14px;
   color: #6e6e6e;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .site-footer.footer-style-three.footer-style-four .footer-widget-area {
@@ -11157,7 +11157,7 @@ textarea {
 
 .site-footer.footer-style-five .widget .widget-title {
   color: #3c424d;
-  font-family: "Heebo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 25px;
   font-weight: 300;
   margin-bottom: 40px;
@@ -11951,188 +11951,6 @@ a:focus {
   margin: 15vh;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////////
-	//   Default Modal Styles   //
-////////////////////////////////////////////////////////////////////////////////////////////// */
-/*   This is the background overlay   */
-.backgroundOverlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #000000;
-  opacity: .85;
-  filter: alpha(opacity=85);
-  -moz-opacity: .85;
-  z-index: 101;
-  display: none;
-}
-
-/*   This is the Popup Window   */
-.delayedPopupWindow {
-  display: none;
-  position: fixed;
-  max-width: 790px;
-  height: 600px;
-  top: 50%;
-  left: 50%;
-  margin-left: -250px;
-  margin-top: -320px;
-  background-color: #ffffff25;
-  border: 2px solid rgba(255, 255, 255, 0.055);
-  z-index: 102;
- padding-top: 5px;
- max-height: calc(100vh - 80px);
-overflow-y: auto;  
-
- 
-}
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-/*   This is the closing button  */
-#btnClose {
-
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  color: #BCBCBC;
-  padding-right: 50px;
-}
-
-/*   This is the closing button hover state  */
-#btnClose:hover {
-  color: #c90c12;
-}
-
-/*   This is the description headline and paragraph for the form   */
-#delayedPopup > div.formDescription {
-  float: left;
-  display: block;
-  width: 44%;
-  padding: 1% 3%;
-  font-size: 18px;
-  color: #666;
-  clear: left;
-}
-
-/*   This is the styling for the form's headline   */
-#delayedPopup > div.formDescription h2 {
-  color: #444444;
-  font-size: 36px;
-  line-height: 40px;
-}
-
-/* 
-////////// MailChimp Signup Form //////////////////////////////
-*/
-/*   This is the signup form body  */
-#delayedPopup #mc_embed_signup {
-  float: left;
-  width: 47%;
-  padding: 1%;
-  display: block;
-  font-size: 16px;
-  color: #666;
-  margin-left: 1%;
-}
-
-/*   This is the styling for the signup form inputs  */
-#delayedPopup #mc-embedded-subscribe-form input {
-  width: 95%;
-  height: 30px;
-  font-size: 18px;
-  padding: 3px;
-  margin-bottom: 5px;
-}
-
-/*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
-#delayedPopup #mc-embedded-subscribe-form input:hover {
-  border: solid 2px #40c348;
-  box-shadow: 0 1px 3px #AAAAAA;
-}
-
-/*   This is the styling for the signup form inputs when they are focused  */
-#delayedPopup #mc-embedded-subscribe-form input:focus {
-  border: solid 2px #40c348;
-  box-shadow: none;
-}
-
-/*   This is the styling for the signup form submit button  */
-#delayedPopup #mc-embedded-subscribe {
-  width: 100% !important;
-  height: 40px !important;
-  margin: 10px auto 0 auto;
-  background: #5D9E62;
-  border: none;
-  color: #fff;
-}
-
-/*   This is the styling for the signup form submit button hover state  */
-#delayedPopup #mc-embedded-subscribe:hover {
-  background: #40c348;
-  color: #fff;
-  box-shadow: none !important;
-  cursor: pointer;
-}
-.modal-window {
-  position: fixed;
-  background-color: rgba(32, 32, 32, 0.87);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.modal-window:target {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-.modal-window > div {
-  width: 350px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 2em;
-  background: #ffffff;
-  margin-left: -26px;
-}
-.modal-window header {
-  font-weight: bold;
-}
-.modal-window h1 {
-  font-size: 150%;
-  margin: 0 0 15px;
-}
-
-.modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 70px;
-  text-decoration: none;
-}
-.modal-close:hover {
-  color: black;
-}
 
 
 a1 {
@@ -13737,7 +13555,7 @@ background-image: linear-gradient(-90deg, rgba(121, 0, 151, 0.404), rgba(233, 12
     bottom: 0;
     left: 0;
     width: auto;
-    height: 250px;
+    height: 150px;
   
   }
   .video iframe {
@@ -13816,4 +13634,438 @@ span {
 }
 .owl-nav button:focus {
     outline: none;
+}
+
+.video-banner {
+  display: block;
+}
+@media (min-width: 641px) {
+  .video-banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+.video-banner .video-banner-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.video-banner-headline {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25em;
+  font-weight: 900;
+  line-height: 1.0em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+}
+@media (min-width: 641px) {
+  .video-banner-headline {
+    left: 2em;
+    bottom: 2.75em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+.video-banner-icon-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.0);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(1.0);
+	-ms-transform: translateX(-50%) translateY(-50%) scale(1.0);
+	-o-transform: translateX(-50%) translateY(-50%) scale(1.0);
+	transform: translateX(-50%) translateY(-50%) scale(1.0);
+  
+  -webkit-transition: 
+		all 0.2s ease-out 0.05s;
+	transition: 
+		all 0.2s ease-out 0.05s;
+}
+@media (min-width: 641px) {
+  .video-banner-icon-play {
+    width: 4.5em;
+    height: 4.5em;
+  }
+}
+.video-banner-icon-play:hover {
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+	-moz-transform: translateX(-50%) translateY(-50%) scale(1.2);
+	-ms-transform: translateX(-50%) translateY(-50%) scale(1.2);
+	-o-transform: translateX(-50%) translateY(-50%) scale(1.2);
+	transform: translateX(-50%) translateY(-50%) scale(1.2);
+  
+  backgound: #330099;
+}
+
+.content {
+  display: block;
+  min-height: 100vh;
+  max-width: 40rem;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+}
+@media (min-width: 641px) {
+  .content {
+    margin: 5.75rem auto;
+    padding: 2.5rem;
+  }
+}
+
+.content h1,
+.content h2,
+.content p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #0D013D;
+}
+.content h1 {
+  font-size: 3.25em;
+  font-weight: 200;
+  line-height: 1.0em;
+  
+  margin: 0 0 0.5rem 0;
+}
+@media (min-width: 641px) {
+  .content h1 {
+    font-size: 4em;
+  }
+}
+.content h2 {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.155em;
+  
+  margin-top: 3em;
+}
+
+/* buttons */
+.content .button-group {
+  margin-top: 1em;
+}
+.content .button {
+  display: inline-block;
+  padding: 1em 2em;
+  min-width: 8em;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 1.5em;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  
+  /* button theme - secondary is default */
+  background: #f0f0f0;
+  color: #2B2B2B;
+  
+  -webkit-transition: 
+		all 0.2s ease-out 0.05s;
+	transition: 
+		all 0.2s ease-out 0.05s;
+}
+.content .button ~ .button {
+  margin-left: 0.5em;
+}
+.content .button:hover {
+  background: #e5e5e5;
+}
+/* primary button overrides */
+.content .button.primary {
+  background: #E50055;
+  color: #fff;
+}
+.content .button.primary:hover {
+  background: #9D00E5;
+}
+
+
+/* video thumbnail grid */
+.content .video-thumb-grid {
+  position: relative;
+  font-size: 0; /* collapse the white-space */
+  width: calc(100% + 2rem);
+  margin: 0 -1rem;
+}
+.content .video-thumb {
+  display: inline-block;
+  vertical-align: top;
+  
+  text-decoration: none;
+  
+  /* calculate the width, gutters, and aspect ratio */
+  width: calc((100% - 4rem) / 2);
+  height: 0;
+  padding-top: calc(((100% - 4rem) / 2) * 0.5625); /* 16:9 calc */
+  
+  margin: 1rem 1rem; /* gutters */
+  
+  overflow: hidden; /* clipping */
+  
+  position: relative; /* enable positioning for inner content */
+  
+  font-size: 1rem; /* reset the font size */
+  
+  -webkit-transform: scale(1.0);
+	transform: scale(1.0);
+  box-shadow: 0 0 0 rgba(0,0,0,0.0);
+  
+  -webkit-transition: 
+		all 0.2s ease-out 0.05s;
+	transition: 
+		all 0.2s ease-out 0.05s;
+}
+.content .video-thumb:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(13,1,61,0.35);
+}
+.content .video-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  /* position inside the 16:9 container */
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* clipping for source images that are letterboxed */
+  object-fit: cover;
+  object-position: 50% 50%;
+  
+  background: #2b2b2b;
+}
+
+
+
+
+
+
+
+
+/* Video Modal
+-----------------------------------------*/
+.video-modal,
+.video-modal .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+}
+.video-modal {
+	overflow: hidden;
+	position: fixed;
+	opacity: 0.0;
+
+  -webkit-transform: translate(500%,0%);
+  transform: translate(500%,0%);
+
+  -webkit-transition: -webkit-transform 0s linear 0s;
+  transition: transform 0s linear 0s;
+
+
+  /* using flexbox for vertical centering */
+
+  /* Flexbox display */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  /* Vertical alignment */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.video-modal .overlay {
+  z-index: 0;
+  background: rgba(13,1,61,0.82); /* overlay color */
+
+  opacity: 0.0;
+
+  -webkit-transition: opacity 0.2s ease-out 0.05s;
+  transition: opacity 0.2s ease-out 0.05s;
+}
+
+
+.video-modal-content {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+  
+	margin: 0 auto;
+
+	overflow-y: visible;
+
+	background: #000;
+  
+  width: calc(100% - 12em);
+  height: 0;
+  padding-top: calc((100% - 12em) * 0.5625); /* 16:9 calc */
+}
+
+/* Scaling to fit within the current Viewport size:
+   When viewport aspect ratio is greater than 16:9
+   work off the height instead of the width for calc */
+ @media (min-aspect-ratio: 16/9) {
+  .video-modal-content {
+    width: 0;
+    height: calc(100vh - 10em);
+    padding-top: 0;
+    padding-left: calc((100vh - 10em) * 1.7778); /* 16:9 calc */
+  }
+}
+
+/* Mobile Layout Tweaks - side margins reduced */
+@media (max-width: 640px) {
+	.video-modal-content {
+		width: calc(100% - 1em);
+    padding-top: calc((100% - 1em) * 0.5625); /* 16:9 calc */
+	}
+}
+
+/* modal close button */
+.close-video-modal {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: -40px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* set the iframe element to stretch to fit its parent element */
+iframe#youtube {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	background: #000;
+	box-shadow: 0px 2px 16px rgba(0,0,0,0.5);
+}
+
+/* show the modal: 
+   add class to the body to reveal */
+.show-video-modal .video-modal {
+	opacity: 1.0;
+
+	transform: translate(0%,0%);
+	-webkit-transform: translate(0%,0%);
+}
+.show-video-modal .video-modal .overlay {
+	opacity: 1.0;
+}
+.show-video-modal .video-modal-content {
+	transform: translate(0%,0%);
+	-webkit-transform: translate(0%,0%);
+}
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.lightbox-container {
+  position: relative;
+  max-width: 960px;
+  margin: 7% auto;
+  display: block;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .lightbox-container {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .lightbox-container {
+    margin-top: 13%;
+  }
+}
+.lightbox-content {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+.lightbox-close {
+  text-transform: uppercase;
+  background: transparent;
+  position: absolute;
+  font-weight: 300;
+  font-size: 12px;
+  display: block;
+  border: none;
+  color: white;
+  top: -22px;
+  right: 3%;
+}
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/* IGNORE FORM THIS POINT ON */
+
+#playme {
+  background: #007fed;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
 }
