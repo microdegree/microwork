@@ -116,7 +116,6 @@
     <meta name="google-signin-client_id"
         content="265409935246-3jn1do8pg9iq6tdan0etuklanemdrqvk.apps.googleusercontent.com">
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <style>
         .p {
           text-align: center;
@@ -243,14 +242,28 @@
                 <div class="col-lg-6">
                     <div class="hero-thumb-area">
                   <h4>Sign In To MicroDegree</h4>
-                  <div class="google-btn">
-                    <div class="google-icon-wrapper" data-onsuccess="onSignIn">
-                      <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
-                    </div>
-                    <div data-onsuccess="onSignIn" >using google</div>
-                    <a href="#" onclick="signOut();" >
-                </a>
-                  </div>
+                  <div id="my-signin2"></div>
+                  <script>
+                    function onSuccess(googleUser) {
+                      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                    }
+                    function onFailure(error) {
+                      console.log(error);
+                    }
+                    function renderButton() {
+                      gapi.signin2.render('my-signin2', {
+                        'scope': 'profile email',
+                        'width': 240,
+                        'height': 50,
+                        'longtitle': true,
+                        'theme': 'dark',
+                        'onsuccess': onSuccess,
+                        'onfailure': onFailure
+                      });
+                    }
+                  </script>
+                
+                  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
                     </div>
                 </div>
                 
