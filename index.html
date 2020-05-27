@@ -154,9 +154,8 @@
                                         <li><a href="./hiring-partners.html">Hiring Partners</a></li>
                                         <li><a href="./course.html">Courses</a></li>
                                         <li><a href="tel:+91 97432 95272">+91 97432 95272</a></li>
-                                         <li><div class="mobileShow"><a  onclick="document.getElementById('id02').style.display='block'">Sign Up</a></div></li> 
-                                         <li><div class="mobileHide"><a class="btn btn-primary btn-gradient" style="width: 150px;height: 50px;color: white;" onclick="document.getElementById('id01').style.display='block'">Sign Up</a></div></li> 
-                                         <!-- <li><a class="btn btn-primary btn-gradient" onclick="document.getElementById('id01').style.display='block'">Sign Up</a></li> -->
+                                                                             <!-- <li><a href="./enroll-form.html">SignUp</a></li> -->
+                                                                             <li><a class="btn btn-primary btn-gradient" onclick="document.getElementById('id01').style.display='block'">Sign Up</a></li>
                                    </ul>
                                 </nav>
                                 <!--/.menu-->
@@ -276,28 +275,29 @@
     
   </div> -->
 
-  <div  class="mobileHide">
-<div class="w3-container">
+  
+<div class="w3-container" >
  
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content">
-        <header class="w3-container "> 
-          <span onclick="document.getElementById('id01').style.display='none'" 
-          class="w3-button w3-display-topright">&times;</span>
-          
-        </header>
+        <button onclick="document.getElementById('id01').style.display='none'"  class="lightbox-close">
+            Close | ✕
+          </button>
         <div class="w3-container">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
+                        <div class="mobileHide">
                         <div class="hero-thumb-area">
                             <figure class="hero-thumb">
                                 <img src="assets/images/agency/log.png" alt="img" style="height: 300px;">
                             </figure>
                         </div>
                     </div>
+                    </div>
+              
                     <div class="col-lg-6" style="margin-top: -0px;">
-                        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="mobileHide">
                             <div class="section-header style-seven">
                                 <div class="flex">
                                    <center> <p class="section-title"  style="font-size: 30px;font-weight: 450;font-family: Montserrat;">Login to MicroDegree  </p></center>
@@ -336,40 +336,14 @@
                                   
                             </div>
                         </div>
-                    </div>
-                </div>
-        </div>
-        <footer class="w3-container ">
-       
-        </footer>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="mobileShow">
-  <div class="w3-container" >
- 
-    <div id="id02" class="w3-modal">
-      <div class="w3-modal-content">
-        <header class="w3-container "> 
-          <span onclick="document.getElementById('id02').style.display='none'" 
-          class="w3-button w3-display-topright">&times;</span>
-          
-        </header>
-        <div class="w3-container">
-            <div class="container">
-                <div class="row align-items-center">
-                 
-                    <div class="col-lg-6" style="margin-top: -0px;">
-                        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="mobileShow">
                             <div class="section-header style-seven">
                                 <div class="flex">
-                                   <center> <p class="section-title"  style="font-size: 25px;font-weight: 450;font-family: Montserrat;">Login to MicroDegree  </p></center>
+                                   <center> <p class="section-title"  style="font-size: 25px;font-weight: 450;font-family: Montserrat;margin-top: 40px;">Login to MicroDegree  </p></center>
                               
                                 </div>
                                 
-                                <center> <p class="section-title"  style="font-size: 15px;font-weight: 300;font-family: Montserrat;margin-top: -20px;">Your Licence To Lead  </p></center>
+                                <center> <p class="section-title"  style="font-size: 15px;font-weight: 300;font-family: Montserrat;margin-top: 10px;">Your Licence To Lead  </p></center>
                                   
                                 <div >
                                     <div id="my-signin2"></div>
@@ -397,7 +371,7 @@
                                    
                                 </div>
                                 
-                                <center> <p class="section-title"  style="font-size: 10px;font-weight: 300;font-family: Montserrat;margin-top: -0px;color: rgb(70, 69, 69);">By using this website, you agree to these terms and privacy policy. </p></center>
+                                <center> <p class="section-title"  style="font-size: 8px;font-weight: 300;font-family: Montserrat;margin-top: 10px;color: rgb(70, 69, 69);">By using this website, you agree to these terms and privacy policy. </p></center>
                                   
                             </div>
                         </div>
@@ -410,8 +384,8 @@
       </div>
     </div>
   </div>
-  </div>
 </div>
+ 
 <div class="site-content agency-site-content"  >
     <div class="mobileHide">
         <section id="home" class="hero-section hero-agency"  style="margin-top: -50px;"
