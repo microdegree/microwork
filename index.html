@@ -306,8 +306,10 @@
                                 
                                 <center> <p class="section-title"  style="font-size: 20px;font-weight: 300;font-family: Montserrat;margin-left: -100px;margin-top: -20px;">Your Licence To Lead  </p></center>
                                   
-                                <div >
-                                    <div id="my-signin2"></div>
+                                <div style="margin-left:50px ;">
+                                    <div id="my-signin2" data-onsuccess="onSignIn"></div>
+                                    
+                                    <a href="#" onclick="signOut();" >
                                     <script>
                                       function onSuccess(googleUser) {
                                         console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -331,7 +333,7 @@
                                     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
                                    
                                 </div>
-                                
+                            </br>
                                 <center> <p class="section-title"  style="font-size: 10px;font-weight: 300;font-family: Montserrat;margin-left: -100px;margin-top: -0px;color: rgb(70, 69, 69);">By using this website, you agree to these terms and privacy policy. </p></center>
                                   
                             </div>
@@ -346,7 +348,9 @@
                                 <center> <p class="section-title"  style="font-size: 15px;font-weight: 300;font-family: Montserrat;margin-top: 10px;">Your Licence To Lead  </p></center>
                                   
                                 <div >
-                                    <div id="my-signin2"></div>
+                                    <div id="my-signin3" data-onsuccess="onSignIn"></div>
+                                    
+                                    <a href="#" onclick="signOut();" >
                                     <script>
                                       function onSuccess(googleUser) {
                                         console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
@@ -355,7 +359,7 @@
                                         console.log(error);
                                       }
                                       function renderButton() {
-                                        gapi.signin2.render('my-signin2', {
+                                        gapi.signin2.render('my-signin3', {
                                           'scope': 'profile email',
                                           'width': 220,
                                           'height': 50,
