@@ -13511,7 +13511,7 @@ iframe {
 .abcRioButtonContentwrapper{
 height: 100%;
 width: 100%;
-background-image: linear-gradient(-90deg, rgba(121, 0, 151, 0.404), rgba(233, 12, 130, 0.575));
+background-image: linear-gradient(-90deg, #ffffff, rgb(255, 255, 255));
 }
  .mobileHide { display: inline;}
    /* Smartphone Portrait and Landscape */
