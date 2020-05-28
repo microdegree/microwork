@@ -69,6 +69,8 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <meta name="google-signin-client_id"
         content="265409935246-3jn1do8pg9iq6tdan0etuklanemdrqvk.apps.googleusercontent.com">
 
@@ -90,18 +92,18 @@
                                 <img src="assets/images/agency/sign.png" class="img-responsive" id="optionalstuff" style="margin-top: 100px;">
             
                         </div>
-                        <div class="col-lg-4">
-                        <div  style="margin-top: 0px;color: rgb(255, 255, 255);" class="align-items-center" >
+                        <div class="col-lg-5">
+                        <div  style="margin-top: 0px;color: #5e5e5e;" class="align-items-center" >
                                            
-                                            <form name="crashCoursEnrollForm" class="candidateEnrolForm  cardform" 
+                                            <form name="crashCoursEnrollForm" class="candidateEnrolForm " 
                                              method="POST" data-netlify="true"
                                             action="./course.html"
                                                ></br>
                                                <center> <div class="abcRioButtonContentwrapper" >
                                                 <img src="assets/images/logo/microdegreelogo.png" class="img-responsive" style="height: 40px;width: 150px;background-color: white;"/>
                                                </div> </center>
-                                           <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;color: rgb(255, 255, 255);font-family: Montserrat;">Sign Up</h1></center>
-                                           <center> <h5 style="color: rgb(255, 255, 255);font-family: Montserrat;"> SignUp Using Google</h5></center>
+                                           <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;color: #5e5e5e;font-family: Montserrat;">Sign Up</h1></center>
+                                          
                                             </br>
                                          <center><div id="my-signin2" data-onsuccess="onSignIn" ></div></center>
                                     
@@ -127,7 +129,8 @@
                                         </script>
                                       
                                         <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-                                    
+                                    </br>
+                                        <center> <h5 style="color: #5e5e5e;font-family: Montserrat;">--------- Or SignUp Using Email ---------</h5></center>
                                                <div class="form-group selectCourse" >
                                             <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
                                             <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;margin-top: -5px;"
@@ -160,7 +163,9 @@
                                          
                                         <center> <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;">Submit</button></center>
                                         <!-- <center> <h7 style="color: rgb(255, 255, 255);font-family: Montserrat;">Already registered User?<a href="./course.html">Login</a></h7></center> -->
-                                            </form>
+                                        <hr class="style12">
+                                        <br>
+                                    </form>
                                 </div>
                                 </div>
                             </div>
