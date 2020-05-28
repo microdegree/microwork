@@ -908,7 +908,7 @@ cite {
 }
 
 .btn {
-  border: 1px solid #333;
+  border: 1px solid rgba(231, 30, 97, 0.329);
   border-radius: 3px;
   color: #333;
   font-size: 16px;
@@ -14021,6 +14021,53 @@ iframe#youtube {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
 .lightbox-close {
+  text-transform: uppercase;
+  background: transparent;
+  position: absolute;
+  font-weight: 300;
+  font-size: 12px;
+  display: block;
+  border: none;
+  color: white;
+  top: -22px;
+  right: 3%;
+}
+
+
+.lightbox2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.lightbox2-container {
+  position: relative;
+  max-width: 960px;
+  margin: 7% auto;
+  display: block;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .lightbox2-container {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .lightbox2-container {
+    margin-top: 13%;
+  }
+}
+.lightbox2-content {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+.lightbox2-close {
   text-transform: uppercase;
   background: transparent;
   position: absolute;

@@ -68,3 +68,41 @@
 a {
     color: #ee1e638f;
 }
+.btn-11 {
+  position: relative;
+  color: #7a7079;
+}
+.btn-11:before, .btn-11:after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #635761;
+  border-radius: 50%;
+}
+.btn-11:before {
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.btn-11:after {
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+.btn-11:hover {
+  color: #d8d5d8;
+}
+.btn-11:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+          animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.btn-11:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+          animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
