@@ -30,7 +30,7 @@
   }
 
   a:hover {
-	color: #075e51;
+	color: #da209273;
   }
   .text-dark {
 	text-decoration: none !important;
@@ -42,7 +42,7 @@
 	overflow: hidden;
   }
   .elmahio-ad .logo {
-	background: #0da58e;
+	background: #da209273;
 	width: 60px;
 	height: 60px;
 	text-align: center;
@@ -66,7 +66,7 @@
     border-color: #fff #fff #fff;
 }
 a {
-    color: #ee1e638f;
+    color: #4002698f;
 }
 .btn-11 {
   position: relative;
@@ -110,7 +110,7 @@ a {
 	position: relative;
 	display: inline-block;
 	padding: 5px 5px;
-	color: #55006ed5;
+	color: #5c5fa0;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	text-decoration: none;
@@ -193,17 +193,38 @@ a {
 	transition: 1s;
 	transition-delay: 0.75s;
 }
-.mobileHide { display: inline;}
-/* Smartphone Portrait and Landscape */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px){  .mobileHide { display: none;}}
-
-.mobileShow {display: none;} 
-
-/* Smartphone Portrait and Landscape */ 
-@media only screen 
-  and (min-device-width : 320px) 
-  and (max-device-width : 480px){ 
-    .mobileShow {display: inline;}
+button {
+  background: transparent;
+  border: none;
+  margin: 30px auto 0;
+  display: block;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px;
+}
+button:before {
+  content: '';
+  border-bottom: 1px solid #5c5fa0;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover:before {
+  width: 100%;
+  padding: 0;
+}
+button:active {
+  background: rgb(255, 255, 255);
+  color: #fff;
+  -webkit-transition: none;
+  transition: none;
 }

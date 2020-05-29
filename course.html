@@ -69,7 +69,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
 </head>
+<style type="text/css">
+  .mobileShow { display: none;}
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){ .mobileShow { display: inline;}}
 
+  .mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){  .mobileHide { display: none;}}
+</style>
 <body class="home-agency">
 
     <!-- Google Tag Manager (noscript) -->
@@ -128,25 +140,33 @@
 
     
     <div class="site-content agency-site-content">
-      
-      <center><div class="align-items-center" style="margin-top:20px">
-        <button type="button" ><a href="#course1" style="font-size: 13px;font-family: Montserrat;font-weight: 550;" class="a1" >  <span></span>
-          <span></span>
-          <span></span>
-          <span></span> English</a>
-        </button>
-        <img src="assets/images/agency/unnamed.png" style="margin-top: -10px;" />
-        <button type="button" ><a href="#course2" style="font-size: 13px;font-family: Montserrat;font-weight: 550;" class="a1" > 
-          <span></span>
-          <span></span>
-          <span></span>
-          Kannada</a></button>
-      
-      </div>
 
-    </center>
+     
+      <section  class="style-two pt-60" style="margin-top: -30px;">
+        <div class="cardnav">
+          
+            <div class="card-body">
+              <div class="tab-content">
+       
+                    <div class="container">
+                        
+      <h1 style="float: left;font-weight: 900;color:#5c5fa0;">Courses</h1></br>
+      <div style="float: left;">
+        <div class="mobileHide" style="margin-left: -158px;font-family: Montserrat;">
+      <button type="button"  class="btn " ><a href="#course1" style="color:#EB5C74;">English</a></button>
+      <button type="button"  class="btn " ><a href="#course2" style="color:#EB5C74;">Kannada</a></button>
+    </div>
+    <div class="mobileShow" style="margin-left: -158px;font-family: Montserrat;">
+      <button type="button"  class="btn " ><a href="#course1" style="color:#EB5C74;">English</a></button>
+      <button type="button"  class="btn " ><a href="#course2" style="color:#EB5C74;">Kannada</a></button>
+    </div>
+    </div>
+    </div>
   </div>
- 
+</div>
+</div>
+      </section>
+</br>
     
         <section id="course1" class="style-two pt-60" style="margin-top: -30px;">
         <div class="cardnav">
@@ -156,6 +176,8 @@
                 <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
                     <div class="container">
                         <div class="tab-content">
+                          
+                           
                             <h2 style="float: left;font-weight: 500;">Fundamental of JS  </h2>
                         </br>
                          <br>  <br>
@@ -177,7 +199,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -238,7 +260,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -298,7 +320,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -358,7 +380,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -418,7 +440,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -478,7 +500,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -538,7 +560,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -598,7 +620,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -658,7 +680,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -718,7 +740,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -778,7 +800,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                   English
                                                 </div></a>
                                               
@@ -838,7 +860,7 @@
                                        
                                             <div id="container"  >
                                                 
-                                                <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                     English
                                                 </div></a>
                                               
@@ -921,7 +943,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -982,7 +1004,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1041,7 +1063,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1102,7 +1124,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1162,7 +1184,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1223,7 +1245,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1284,7 +1306,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1343,7 +1365,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1403,7 +1425,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1463,7 +1485,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1523,7 +1545,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1583,7 +1605,7 @@
                                            
                                                 <div id="container"  >
                                                     
-                                                    <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                                    <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                       Kannada
                                                     </div></a>
                                                   
@@ -1656,7 +1678,7 @@
                                    
                                         <div id="container"  >
                                             
-                                            <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                            <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                               Kannada
                                             </div></a>
                                           
@@ -1716,7 +1738,7 @@
                                    
                                         <div id="container"  >
                                             
-                                            <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                            <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                               Kannada
                                             </div></a>
                                           
@@ -1776,7 +1798,7 @@
                                    
                                         <div id="container"  >
                                             
-                                            <a ><div id="texts" style="float: right;color: #4b0268;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
+                                            <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
                                                 Kannada
                                             </div></a>
                                           
