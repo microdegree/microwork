@@ -7353,13 +7353,16 @@ textarea {
 .hotel-rooms-section .row:last-child {
   margin-bottom: -50px;
 }
-
+.contain{
+  object-fit: contain !important;
+}
 .room-card {
   background-color: #fff;
   border-radius: 5px;
   padding: 40px 30px 35px;
   position: relative;
   box-shadow: 30px 20px 60px rgba(23, 159, 246, 0.05);
+  
 }
 
 .room-card>h2 {
