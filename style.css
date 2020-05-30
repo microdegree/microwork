@@ -11759,7 +11759,30 @@ textarea {
   background-position: right center;
   color: #ffffff;
 }
+.btn-customg {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  box-shadow: 2px 4px 8px 0 #08BD80;
+  color: #ffffff;
+  border: 0;
+  border-radius: 7px;
+  background-size: 175% auto;
+  transition: 0.5s;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #08BD80 0%, #08BD80 100%);
+}
 
+.btn-customg:hover {
+  background-position: right center;
+  color: #ffffff;
+}
+
+.btn-customg:focus {
+  background-position: right center;
+  color: #ffffff;
+}
 a,
 a:hover,
 a:active,

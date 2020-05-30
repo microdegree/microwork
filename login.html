@@ -101,29 +101,59 @@
                                                 <a  href="index.html"><img src="assets/images/logo/microdegreelogo.png" class="img-responsive" style="height: 50px;width: 210px;background-color: white;margin-top: -0px;"/></a>
                                                </div> </center>
                                             </br>
-                                         <center><div id="my-signin2" data-onsuccess="onSignIn" ></div></center>
+                                            <center><div id="my-signin2" data-onsuccess="onSignIn" ></div></center>
                                     
-                                        <a href="#" onclick="signOut();" >
-                                        <script>
-                                          function onSuccess(googleUser) {
-                                            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                                          }
-                                          function onFailure(error) {
-                                            console.log(error);
-                                          }
-                                          function renderButton() {
-                                            gapi.signin2.render('my-signin2', {
-                                              'scope': 'profile email',
-                                              'width': 220,
-                                              'height': 50,
-                                              'longtitle': true,
-                                              'theme': 'light',
-                                              'onsuccess': onSuccess,
-                                              'onfailure': onFailure
-                                            });
-                                          }
-                                        </script>
-                                      
+                                            <a href="#" onclick="signOut();" >
+                                            <script>
+                                              function onSignIn(googleUser) {
+                                                var profile = googleUser.getBasicProfile();
+    
+                                                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                                                console.log('Name: ' + profile.getName());
+                                                console.log('Image URL: ' + profile.getImageUrl());
+                                                console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    
+                                                var requestObject = {
+                                                    "Name": profile.getName(),
+                                                    "Email": profile.getEmail(),
+                                                    "User Type": "Student"
+                                                }
+                                                postToServer(requestObject)
+    
+                                            }
+                                            function postToServer(requestObject) {
+                                                event.preventDefault()
+                                                console.log('hello myFunction')
+    
+    
+                                                fetch('https://guarded-dawn-21274.herokuapp.com/api/auth/userSignUpForm', {
+                                                        method: 'POST',
+                                                        headers: {
+                                                            'Content-Type': 'application/json',
+                                                        },
+                                                        body: JSON.stringify(requestObject),
+                                                    })
+                                                    .then(response => response.json())
+                                                    .then(data => {
+                                                        window.location = './course.html';
+                                                    })
+                                            }
+                                              function onFailure(error) {
+                                                console.log(error);
+                                              }
+                                              function renderButton() {
+                                                gapi.signin2.render('my-signin2', {
+                                                  'scope': 'profile email',
+                                                  'width': 220,
+                                                  'height': 50,
+                                                  'longtitle': true,
+                                                  'theme': 'light',
+                                                  'onsuccess': onSignIn,
+                                                  'onfailure': onFailure
+                                                });
+                                              }
+                                            </script>
+                                          
                                         <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
                                     </br>
                                         <center> <h5 style="color: #5e5e5e;font-family: Montserrat;">--------- Or SignUp Using Email ---------</h5></center>
