@@ -942,7 +942,7 @@ cite {
 
 .btn-default {
   background-color: #EB5C74;
-  color: #fff;
+  color: #EB5C74;
   border-color: #EB5C74;
   height: 70px;
   line-height: 70px;
@@ -952,7 +952,7 @@ cite {
 
 .btn-default:hover {
   background-color: #37CA83;
-  color: #fff;
+  color: #EB5C74;
   border-color: #37CA83;
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.18), 0 0px 0px 0 rgba(0, 0, 0, 0.15);
 }
@@ -971,14 +971,14 @@ cite {
 .btn-default.btn-download:hover,
 .btn-default.btn-download:focus {
   background-color: #EB5C74;
-  color: #fff;
+  color: #EB5C74;
 }
 
 .btn-default2 {
   background-color: #fff;
   border: 0 solid;
   border-radius: 0;
-  color: #333;
+  color: #EB5C74;
   font-size: 12px;
   font-weight: 500;
   height: 45px;
@@ -1004,7 +1004,7 @@ cite {
 
 .btn-default2:hover {
   background-color: #9B2E2E;
-  color: #fff;
+  color: #EB5C74;
 }
 
 .btn-default2:hover:before {
@@ -1013,7 +1013,7 @@ cite {
 
 .btn-default2.btn-primary {
   background-color: #9B2E2E;
-  color: #fff;
+  color: #EB5C74;
 }
 
 .btn-default2.btn-primary:before {
@@ -1024,7 +1024,7 @@ cite {
 .btn-default2.btn-primary:focus,
 .btn-default2.btn-primary:active:not([disabled]):not(.disabled) {
   background-color: #333 !important;
-  color: #fff !important;
+  color: #EB5C74 !important;
 }
 
 .btn-default2.btn-primary:hover:before,
@@ -1044,7 +1044,7 @@ cite {
   background-color: #fd8320;
   border: 0 solid;
   border-radius: 0;
-  color: #fff;
+  color: #EB5C74;
   font-size: 16px;
   height: 60px;
   line-height: 62px;
@@ -1169,7 +1169,7 @@ cite {
 .btn-primary1.btn-gradient1:focus {
   background-image: -webkit-linear-gradient(left, #ffffff,#ffffff);
   background-image: linear-gradient(to right, #ffffff, #ffffff);
-  color: #fff !important;
+  color: #EB5C74 !important;
 }
 
 

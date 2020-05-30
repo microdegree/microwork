@@ -155,7 +155,7 @@
                                         <li><a href="./course.html" style="color: #062A42;font-family: Nunito Sans; font-size: 14px;">Courses</a></li>
                                         <li><a href="tel:+91 97432 95272" style="color: #062A42;font-family: Nunito Sans; font-size: 14px;">+91 97432 95272</a></li>
                                                                              <!-- <li><a href="./enroll-form.html">SignUp</a></li> -->
-                                                                             <li><a class="btn btn-primary btn-gradient" onclick="document.getElementById('id01').style.display='block'" style="color: #fff;font-family: Nunito Sans; font-size: 14px;">Sign Up</a></li>
+                                                                             <li><a class="btn btn-primary btn-gradient" onclick="document.getElementById('id01').style.display='block'" style="font-family: Nunito Sans; font-size: 14px;">Login</a></li>
                                    </ul>
                                 </nav>
                                 <!--/.menu-->
@@ -299,59 +299,70 @@
                     <div class="col-lg-6" style="margin-top: -0px;">
                         <div class="">
                             <div class="section-header style-seven">
-                                <div class="mobileHide">
-                                <div class="flex">
-                                   <center> <p class="section-title"  style="font-size: 30px;font-weight: 450;font-family: Montserrat;margin-left: 40px;">Login to MicroDegree  </p></center>
-                              
+                             
+                        </div>
+                            
+                            <div  style="margin-top: 0px;color: #5e5e5e;" class="align-items-center" >
+                                           
+                                <form name="crashCoursEnrollForm" class="candidateEnrolForm " 
+                                 method="POST" data-netlify="true"
+                                action="./course.html"
+                                   ></br>
+                                   <center> <div class="abcRioButtonContentwrapper" >
+                                    <h2 style="font-family: Montserrat;">Login To MicroDegree</h3>
+                                   </div> </center>
+                                </br>
+                             <center><div id="my-signin2" data-onsuccess="onSignIn" ></div></center>
+                        
+                            <a href="#" onclick="signOut();" >
+                            <script>
+                              function onSuccess(googleUser) {
+                                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                              }
+                              function onFailure(error) {
+                                console.log(error);
+                              }
+                              function renderButton() {
+                                gapi.signin2.render('my-signin2', {
+                                  'scope': 'profile email',
+                                  'width': 220,
+                                  'height': 50,
+                                  'longtitle': true,
+                                  'theme': 'light',
+                                  'onsuccess': onSuccess,
+                                  'onfailure': onFailure
+                                });
+                              }
+                            </script>
+                          
+                            <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+                        </br>
+                        <div class="mobileHide">
+                            <center> <h5 style="color: #5e5e5e;font-family: Montserrat;">--------- Or SignUp Using Email ---------</h5></center>
+                        </div> 
+                        <div class="mobileShow">
+                            <center> <h5 style="color: #5e5e5e;font-family: Montserrat;font-size: 10px;">--------- Or SignUp Using Email ---------</h5></center>
+                        </div> 
+                            <div class="form-group selectCourse" >
+                                <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
+                                <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;margin-top: -5px;"
+                                            name="candidateName" placeholder="" required>
                                 </div>
-                            </div>
-                            <div class="mobileShow">
-                                <div class="flex">
-                                   <center> <p class="section-title"  style="font-size: 25px;font-weight: 450;font-family: Montserrat;margin-top: 40px;">Login to MicroDegree  </p></center>
-                              
+                                <div class=" form-group selectCourse" style="margin-top: -10px;">
+                                <label for="emailInputLabel" style="font-family: Montserrat;">Email address *</label>
+                                <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;margin-top: -5px;"
+                                            aria-describedby="emailHelp" placeholder="" required >
                                 </div>
-                            </div>
-                            <div class="mobileHide">
-                                <center> <p class="section-title"  style="font-size: 20px;font-weight: 300;font-family: Montserrat;margin-top: -30px;">Your Licence To Lead  </p></center>
-                            </div> 
-                            <div class="mobileShow">
-                                <center> <p class="section-title"  style="font-size: 15px;font-weight: 300;font-family: Montserrat;margin-left: 0px;margin-top: 8px;">Your Licence To Lead  </p></center>
-                            </div>   
-                                <div class="align-items-center" style="margin-top: -10px;">
-                                    <center><div id="my-signin2" data-onsuccess="onSignIn"></div></center>
-                                    
-                                    <a href="#" onclick="signOut();" >
-                                    <script>
-                                      function onSuccess(googleUser) {
-                                        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                                      }
-                                      function onFailure(error) {
-                                        console.log(error);
-                                      }
-                                      function renderButton() {
-                                        gapi.signin2.render('my-signin2', {
-                                          'scope': 'profile email',
-                                          'width': 220,
-                                          'height': 50,
-                                          'longtitle': true,
-                                          'theme': 'light',
-                                          'onsuccess': onSuccess,
-                                          'onfailure': onFailure
-                                        });
-                                      }
-                                    </script>
-                                  
-                                    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-                                   
-                                </div>
-                            </br></br></br>
-                            <div class="mobileHide">
-                                <center> <p class="section-title"  style="font-size: 10px;font-weight: 300;font-family: Montserrat;margin-left: 0px;margin-top: -0px;color: rgb(70, 69, 69);">By using this website, you agree to these terms and privacy policy. </p></center>
-                            </div>     
-                            <div class="mobileShow">
-                                <center> <p class="section-title"  style="font-size: 8px;font-weight: 300;font-family: Montserrat;margin-left: -0px;margin-top: -0px;color: rgb(70, 69, 69);">By using this website, you agree to these terms and privacy policy. </p></center>
-                            </div>   
-                            </div>
+                               
+                            
+          
+                            <center> <button type="submit" class="btn btn-primary1 btn-gradient1 enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -0px;font-family: Montserrat;height: 40px;">Sign In</button></center>
+                            <img src="assets/images/agency/unnamed.png" style="margin-top: -50px;"/>
+                            <center> <h7 style="color: rgb(94, 93, 93);font-family: Montserrat;font-size: 15px;">Don’t have an account? <a href="./enroll-form.html" style="font-size: 18px;">Sign Up</a></h7></center>
+                                
+                        </form>
+                    </div>
+                            
                         </div>
                         <!-- <div class="mobileShow">
                             <div class="section-header style-seven">
@@ -777,7 +788,7 @@
                                         <div id="container" style="margin-top: -10px;">
                                             <center>
                                              
-                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;">Learn Now</button>
+                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;border-radius: 7px;font-family: Montserrat;">Learn Now</button>
                                             </center>
                                           </div>
                                           
@@ -817,7 +828,8 @@
                                         <div id="container"  >
                                             
                                             <a ><div id="texts" style="float: right;color: #5c5fa0;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
-                                              Kannada
+                                              
+                                            ಕನ್ನಡ
                                             </div></a>
                                           
                                         </div>
@@ -838,7 +850,7 @@
                                             
                                             <center>
                                              
-                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;" >Learn Now</button>
+                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;border-radius: 7px;font-family: Montserrat;" >Learn Now</button>
                                             </center>
                                           </div>
                                           
@@ -897,7 +909,7 @@
                                         <div id="container" style="margin-top: -10px;">
                                             <center>
                                              
-                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;">Learn Now</button>
+                                              <button id="playme" onclick="revealVideo('video','youtube')" style="font-weight: bold;background-color: #EB5C74;border-radius: 7px;font-family: Montserrat;">Learn Now</button>
                                             </center>
                                           </div>
                                           
@@ -952,7 +964,7 @@
                             <div class="room-info room-card">
                                 <div id="container"  >
                                     <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
-                                        Kannada
+                                        ಕನ್ನಡ
                                     </div></a>
                                 </div>
                                 <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Full Stack Development</a></h2>
@@ -990,8 +1002,8 @@
                                     </script> -->
                                     <p style="margin-top: -25px;font-size: 14px;font-family: Nunito Sans;">Certification Program with Job Readiness</p>
                                
-                                    <p style="margin-top: -20px;font-size: 10px;font-family: Nunito Sans;">
-                                        Become a Certified Full-Stack Developer by gaining expertise in MongoDB, ExpressJS, ReactJS, NodeJS. Earn a valued Certification Program in Full-Stack Development by MicroDegree and reputed University
+                                    <p style="margin-top: -20px;font-size: 14px;font-family: Nunito Sans;">
+                                     Earn a valued Certification Program in Full-Stack Development by MicroDegree and reputed University
                                     </p> 
           
                                    
@@ -1030,10 +1042,10 @@
                         <div class="room-info room-card">
                             <div id="container"  >
                                 <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
-                                    Kannada
+                                    ಕನ್ನಡ
                                 </div></a>
                             </div>
-                            <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Full Stack Development</a></h2>
+                            <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Data Science</a></h2>
     
                             <p id="demo" class="p1" style="color: red;font-weight: bold;margin-top: -20px;font-family: Nunito Sans;"> Launching Soon</p>
                             <!-- <script>
@@ -1068,8 +1080,8 @@
                                 </script> -->
                                 <p style="margin-top: -25px;font-size: 14px;font-family: Nunito Sans;">Certification Program with Job Readiness</p>
                            
-                                <p style="margin-top: -20px;font-size: 10px;font-family: Nunito Sans;">
-                                    Learn in-demand skills with 200+ hours of online learning blended with case studies, real world projects. Earn a valued Certification Program in Data Science by MicroDegree and reputed University.
+                                <p style="margin-top: -20px;font-size: 14px;font-family: Nunito Sans;">
+                                   Earn a valued Certification Program in Data Science by MicroDegree and reputed University.
                                 </p> 
       
                                
@@ -1109,10 +1121,10 @@
                         <div class="room-info room-card">
                             <div id="container"  >
                                 <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;font-family: Montserrat;"> 
-                                    Kannada
+                                    ಕನ್ನಡ
                                 </div></a>
                             </div>
-                            <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Full Stack Development</a></h2>
+                            <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Machine Learning</a></h2>
     
                             <p id="demo" class="p1" style="color: red;font-weight: bold;margin-top: -20px;font-family: Nunito Sans;"> Launching Soon</p>
                             <!-- <script>
@@ -1147,8 +1159,8 @@
                                 </script> -->
                                 <p style="margin-top: -25px;font-size: 14px;font-family: Nunito Sans;">Certification Program with Job Readiness</p>
                            
-                                <p style="margin-top: -20px;font-size: 10px;font-family: Nunito Sans;">
-                                    Become a Machine Learning professional and learn how to build news recommendations engine, chatbot and a lot more. Earn a valued Certification Program in Data Science by MicroDegree and reputed University.
+                                <p style="margin-top: -20px;font-size: 14px;font-family: Nunito Sans;">
+                                    Earn a valued Certification Program in Machine Learning by MicroDegree and reputed University.
                                 </p> 
       
                                
@@ -1451,7 +1463,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                              
-                                <img src="assets/images/logo/microdegreelogo.png" alt="logo" style="height: 50px;width: 200px;">  
+                                <img src="assets/images/logo/logot.png" alt="logo" style="height: 50px;width: 250px;margin-left: -20px;">  
                                 </br></br>
                                 <div class="f_social_icon">
                                     <a href="https://www.facebook.com/MicroDegree-101072281390361/?modal=admin_todo_tour " class="fab fa-facebook"></a>
@@ -1488,9 +1500,12 @@
                             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                             
                                 <h3 class="f-title f_600 t_color f_size_18" style="font-family: Montserrat;">Get In Touch</h3>
-                                <a href="tel:+91 97432 95272"  style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">Phone : +91 97432 95272</a>
-                               <a style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">hello@microdegree.work</a>
-                                <a  style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">Address : 3rd Floor, Plama Center, Bejai - Kapikad Rd, Mangalore, Karnataka 575004.</a> 
+                                <a href="tel:+91 97432 95272"  style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Phone : +91 97432 95272</a></br>
+                                <a style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Email : hello@microdegree.work</a> </br>
+                                <a  style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Address : Pillpouch Heathtech Private Limited
+                                    K-tech Innovation Hub
+                                    3rd Floor, Plama Building 
+                                    Bejai, Mangaluru , Karnataka 575004.</a>
                             </div>
                         </div>
                     </div>
@@ -1525,7 +1540,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                              
-                            <center>   <img src="assets/images/logo/microdegreelogo.png" alt="logo" style="height: 50px;width: 200px;">  
+                            <center>   <img src="assets/images/logo/logot.png" alt="logo" style="height: 50px;width: 250px;">  
                             </div>
                             <img src="assets/images/agency/unnamed.png" style="margin-top: -10px;"/>
                           
@@ -1555,9 +1570,12 @@
                             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                           
                                 <center>                                 <h3 class="f-title f_600 t_color f_size_18" style="font-family: Montserrat;">Get In Touch</h3>
-                                    <a href="tel:+91 97432 95272"  style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">Phone : +91 97432 95272</a>
-                                    <a style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">hello@microdegree.work</a> 
-                                    <a  style="color: #062A42;font-family: Montserrat; font-size: 14px;margin-top: -10px;">Address : 3rd Floor, Plama Center, Bejai - Kapikad Rd, Mangalore, Karnataka 575004.</a> </center>
+                                    <a href="tel:+91 97432 95272"  style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Phone : +91 97432 95272</a></br>
+                                    <a style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Email : hello@microdegree.work</a> </br>
+                                    <a  style="font-family: Montserrat; font-size: 14px;margin-top: -10px;">Address : Pillpouch Heathtech Private Limited
+                                        K-tech Innovation Hub
+                                        3rd Floor, Plama Building 
+                                        Bejai, Mangaluru , Karnataka 575004.</a> </center>
                                     <center> 
                                     <div class="f_social_icon" style="margin-top: 40px;">
                                         <a href="https://www.facebook.com/MicroDegree-101072281390361/?modal=admin_todo_tour " class="fab fa-facebook"></a>
