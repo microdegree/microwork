@@ -345,7 +345,9 @@
                                             body: JSON.stringify(requestObject),
                                         })
                                         .then(response => response.json())
-                                       
+                                        .then(data => {
+                                          location = '../course.html';
+                                        })
                                 }
                                   function onFailure(error) {
                                     console.log(error);
@@ -359,7 +361,7 @@
                                       'theme': 'light',
                                       'onsuccess': onSignIn,
                                       'onfailure': onFailure,
-                                      'redirect' :'./course.html'
+                                      
                                     });
                                   }
                                 </script>
@@ -1685,7 +1687,9 @@
                      body: JSON.stringify(requestObject),
                  })
                  .then(response => response.json())
-             
+                 .then(data => {
+                    location = '../course.html';
+                 })
          }
      </script>
     
