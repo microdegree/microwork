@@ -346,7 +346,7 @@
                                         })
                                         .then(response => response.json())
                                         .then(data => {
-                                            location.replace("./course.html");
+                                            window.location.href = "./course.html";
                                         })
                                 }
                                   function onFailure(error) {
@@ -1688,7 +1688,8 @@
                  })
                  .then(response => response.json())
                  .then(data => {
-                    location.replace("./course.html");
+                    window.location.href = "./course.html";
+                    
                  })
          }
      </script>
