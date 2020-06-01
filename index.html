@@ -345,9 +345,7 @@
                                             body: JSON.stringify(requestObject),
                                         })
                                         .then(response => response.json())
-                                        .then(data => {
-                                            window.location = './course.html';
-                                        })
+                                       
                                 }
                                   function onFailure(error) {
                                     console.log(error);
@@ -1686,9 +1684,7 @@
                      body: JSON.stringify(requestObject),
                  })
                  .then(response => response.json())
-                 .then(data => {
-                     window.location = './course.html';
-                 })
+                
          }
      </script>
     
@@ -1697,7 +1693,11 @@
              var auth2 = gapi.auth2.getAuthInstance();
              auth2.signOut().then(function () {
                  console.log('User signed out.');
-             });
+                 
+             })
+             .then(data => {
+                     window.location = './course.html';
+                 })
          }
      </script>
     <script>
