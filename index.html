@@ -358,7 +358,8 @@
                                       'longtitle': true,
                                       'theme': 'light',
                                       'onsuccess': onSignIn,
-                                      'onfailure': onFailure
+                                      'onfailure': onFailure,
+                                      'redirect' :'./course.html'
                                     });
                                   }
                                 </script>
@@ -1684,7 +1685,7 @@
                      body: JSON.stringify(requestObject),
                  })
                  .then(response => response.json())
-                
+             
          }
      </script>
     
@@ -1694,10 +1695,7 @@
              auth2.signOut().then(function () {
                  console.log('User signed out.');
                  
-             })
-             .then(data => {
-                     window.location = './course.html';
-                 })
+             });
          }
      </script>
     <script>
