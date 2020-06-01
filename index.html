@@ -347,6 +347,7 @@
                                         .then(response => response.json())
                                         .then(data => {
                                           location = '../course.html';
+                                          return false;
                                         })
                                 }
                                   function onFailure(error) {
@@ -1689,6 +1690,7 @@
                  .then(response => response.json())
                  .then(data => {
                     location = '../course.html';
+                    return false;
                  })
          }
      </script>
