@@ -346,8 +346,7 @@
                                         })
                                         .then(response => response.json())
                                         .then(data => {
-                                          location = '../course.html';
-                                          return false;
+                                            document.location = './course.html';
                                         })
                                 }
                                   function onFailure(error) {
@@ -1689,8 +1688,7 @@
                  })
                  .then(response => response.json())
                  .then(data => {
-                    location = '../course.html';
-                    return false;
+                    document.location = './course.html';
                  })
          }
      </script>
