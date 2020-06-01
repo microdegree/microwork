@@ -312,7 +312,9 @@
                                     <h2 style="font-family: Montserrat;">Login To MicroDegree</h3>
                                    </div> </center>
                                 
-                                <center><div id="my-signin2" data-onsuccess="onSignIn" ></div></center>
+                                <center><div id="my-signin2" data-onsuccess="onSignIn"    data-scope="https://www.googleapis.com/auth/plus.login"
+                                    data-accesstype="offline"
+                                    data-redirecturi="https://www.microdegree.work/course.html" ></div></center>
                                     
                                 <a href="#" onclick="signOut();" >
                                 <script>
@@ -346,7 +348,7 @@
                                         })
                                         .then(response => response.json())
                                         .then(data => {
-                                            window.location = './course.html';
+                                            
                                         })
                                 }
                                   function onFailure(error) {
@@ -361,6 +363,7 @@
                                       'theme': 'light',
                                       'onsuccess': onSignIn,
                                       'onfailure': onFailure
+                                      
                                     });
                                   }
                                 </script>
@@ -1687,7 +1690,7 @@
                  })
                  .then(response => response.json())
                  .then(data => {
-                     window.location = './course.html';
+                   
                  })
          }
      </script>
