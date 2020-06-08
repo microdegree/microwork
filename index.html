@@ -378,7 +378,7 @@
                         </div> 
                         <form name="crashCoursEnrollForm" class="candidateEnrolForm " 
                         method="POST" data-netlify="true"
-                        onsubmit="window.location.href = 'https://microdegree.thinkific.com/collections'; return false;"
+                         
                           >
                             <div class="form-group selectCourse" >
                                 <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
@@ -393,12 +393,16 @@
                                
                             
           
-                                <center> <input type="submit" value="Submit" class="btn-custom btn-font enrollSubmitButton"  style="margin-top: -50px;font-family: Montserrat;" >Sign In</input></center>
+                                <center> <button type="submit" id="myButton" class="btn-custom btn-font enrollSubmitButton"  style="margin-top: -50px;font-family: Montserrat;" >Sign In</button></center>
                             <img src="assets/images/agency/unnamed.png" style="margin-top: -50px;"/>
                             <center> <h7 style="color: rgb(94, 93, 93);font-family: Montserrat;font-size: 15px;">Don’t have an account? <a href="./enroll-form.html" style="font-size: 18px;">Sign Up</a></h7></center>
                                 
                         </form>
-                        
+                        <script type="text/javascript">
+                            document.getElementById("myButton").onclick = function () {
+                                location.href = "https://microdegree.thinkific.com/collections";
+                            };
+                        </script>
                     </div>
                             
                         </div>
