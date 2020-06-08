@@ -1172,7 +1172,22 @@ cite {
   color: #EB5C74 !important;
 }
 
+.btn-primary2.btn-gradient2 {
+  background-image: -webkit-linear-gradient(left, #08BD80, #08BD80);
+  background-image: linear-gradient(to right, #08BD80, #08BD80);
+  padding: 0 60px;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px #08BD80;
+  color: #ffffff !important;
+}
 
+.btn-primary2.btn-gradient2:hover,
+.btn-primary2.btn-gradient2:focus {
+  background-image: -webkit-linear-gradient(left, #08BD80,#08BD80);
+  background-image: linear-gradient(to right, #08BD80, #08BD80);
+  color: #ffffff !important;
+}
 
 
 
