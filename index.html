@@ -378,7 +378,7 @@
                         </div> 
                         <form name="crashCoursEnrollForm" class="candidateEnrolForm " 
                         method="POST" data-netlify="true"
-                       action="www.microdegree.thinkific.com/collections" 
+                       action="https://microdegree.thinkific.com/collections" 
                           >
                             <div class="form-group selectCourse" >
                                 <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
@@ -393,12 +393,16 @@
                                
                             
           
-                                <center> <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;">Sign In</button></center>
+                                <center> <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;" onclick="show_alert();" alt="PayPal - The safer, easier way to pay online!" value="Submit">Sign In</button></center>
                             <img src="assets/images/agency/unnamed.png" style="margin-top: -50px;"/>
                             <center> <h7 style="color: rgb(94, 93, 93);font-family: Montserrat;font-size: 15px;">Don’t have an account? <a href="./enroll-form.html" style="font-size: 18px;">Sign Up</a></h7></center>
                                 
                         </form>
-                       
+                       <script>
+                           function show_alert() {
+                            alert("xxxxxx");
+                            }
+                       </script>
                     </div>
                             
                         </div>
