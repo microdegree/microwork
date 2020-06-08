@@ -47,6 +47,15 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KD29V9Z');
     </script>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
     <!-- End Google Tag Manager -->
 <script src="https://js.instamojo.com/v1/checkout.js"></script>
     <script>
@@ -383,17 +392,17 @@
                             <div class="form-group selectCourse" >
                                 <label for="nameInputLabel" style="font-family: Montserrat;"> Full Name *</label>
                                 <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;margin-top: -5px;"
-                                            name="candidateName" placeholder="" required>
+                                            name="fname" placeholder="" >
                                 </div>
                                 <div class=" form-group selectCourse" style="margin-top: -10px;">
                                 <label for="emailInputLabel" style="font-family: Montserrat;">Email address *</label>
-                                <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;margin-top: -5px;"
-                                            aria-describedby="emailHelp" placeholder="" required >
+                                <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="fname" style="height: 35px;margin-top: -5px;"
+                                            aria-describedby="emailHelp" placeholder=""  >
                                 </div>
                                
                             
           
-                                <center> <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;" onclick="show_alert();" alt="PayPal - The safer, easier way to pay online!" value="Submit">Sign In</button></center>
+                                <center> <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -50px;font-family: Montserrat;" onclick="show_alert();" alt="PayPal - The safer, easier way to pay online!" value="Submit"><a href="">Sign In</a></button></center>
                             <img src="assets/images/agency/unnamed.png" style="margin-top: -50px;"/>
                             <center> <h7 style="color: rgb(94, 93, 93);font-family: Montserrat;font-size: 15px;">Don’t have an account? <a href="./enroll-form.html" style="font-size: 18px;">Sign Up</a></h7></center>
                                 
